@@ -1,0 +1,217 @@
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.innhold {
+    position: relative;
+    z-index: 1;
+}
+
+.mainpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 20%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 100px;
+}
+
+.sidepanel {
+    position: fixed;
+    border-radius: 5px;
+    top: 70px;
+    right: 20px;
+    z-index: 1;
+    background-color: darkgray;
+    overflow: hidden;
+    width: 150px;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.sidepanel a {
+    padding: 0px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    max-height: 300px;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: darkgray;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 2px;
+    right: 14px;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.aboutme {
+    background-color: lightgray;
+    padding: 20px;
+    width: 940px;
+    display: flex;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.aboutme img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.aboutme p {
+    background-color: darkgray;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    background-color: lightgray;
+    padding: 20px;
+    width: 940px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.project-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    width: 300px;
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin: 100px auto;
+}
+
+.carousel .project-card {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.8s ease;
+    border-radius: 20px;
+}
+
+
+.carousel .project-card.left {
+    transform: translate(-150%, -50%) scale(0.8);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.carousel .project-card.center {
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: 3;
+}
+
+.carousel .project-card.right {
+    transform: translate(50%, -50%) scale(0.8);
+    z-index: 2;
+    opacity: 0.6;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.footer img {
+    width: 50px;
+    height: auto;
+}
+
+.copytext {
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 250px;
+}
+
+.project-page {
+    display: flex;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 20px;
+    width: 940px;
+    gap: 20px;
+    align-items: center;
+}
+
+.project-page div {
+    border-radius: 20px;
+}
+
+.project-page img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.project-page p {
+    font-size: 24px;
+}
